@@ -1,7 +1,9 @@
 .headerContainer {
-  position: absolute;
-  width: 238.62px;
-  height: 25.63px;
-  left: 372px;
-  top: 79.55px;
+  height: 6.5rem;
+  padding: 2.5rem;
+}
+
+.headerContent {
+  max-width: 720px;
+  margin: 0 auto;
 }

@@ -1,1 +1,103 @@
-// TODO
+.bannerContainer {
+  width: 100vw;
+  max-width: 1440px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    width: 100%;
+    position: absolute;
+    top: -50%;
+  }
+}
+
+.container {
+  max-width: 720px;
+  margin: 2rem auto 0;
+
+  h1 {
+    font-weight: bolder;
+    font-size: 3rem;
+  }
+
+  .info {
+    display: flex;
+    padding-top: 24px;
+
+    .infoBlocks {
+      font-size: 0.875rem;
+      color: var(--gray-300);
+
+      display: flex;
+      align-items: center;
+
+      svg {
+        font-size: 1.34rem;
+        stroke-width: 2;
+        margin-right: 8px;
+      }
+
+      & + .infoBlocks {
+        margin-left: 26px;
+      }
+    }
+  }
+
+  .editInfo {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--gray-300);
+    margin-top: 1rem;
+  }
+
+
+  .contentBlock {
+    margin-top: 4rem;
+
+    & + .contentBlock {
+      margin-top: 3rem;
+    }
+
+    .contentHeading {
+      font-size: 2.25rem;
+      font-weight: bold;
+      margin-bottom: 3rem;
+    }
+
+    .contentBody {
+      font-size: 1.125rem;
+      color: var(--gray-100);
+      line-height: 1.6;
+
+      p,
+      li {
+        margin-bottom: 1rem;
+      }
+
+      a {
+        color: var(--pink);
+      }
+    }
+  }
+}
+
+.exitButton {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  color: var(--pink);
+  font-weight: bold;
+  border: 1px solid var(--pink);
+  border-radius: 8px;
+
+  transition: ease .4s;
+
+  &:hover {
+    background-color: var(--pink);
+    color: var(--gray-900);
+  }
+}
